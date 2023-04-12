@@ -6,7 +6,40 @@
         <description>Recent content in Posts on 姆咪 Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Tue, 11 Apr 2023 06:54:32 +0800</lastBuildDate><atom:link href="https://WebZaiMumi.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 13 Apr 2023 00:00:28 +0800</lastBuildDate><atom:link href="https://WebZaiMumi.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>使用Hugo 發布靜態網站 - 2</title>
+        <link>https://WebZaiMumi.github.io/post/hugo-2/</link>
+        <pubDate>Thu, 13 Apr 2023 00:00:28 +0800</pubDate>
+        
+        <guid>https://WebZaiMumi.github.io/post/hugo-2/</guid>
+        <description>&lt;p&gt;接續上篇，這篇文章主要是分享自己的心得經驗，一開始看到 &amp;ldquo;Creating a Blog with Hugo and Github in 10 minutes&amp;rdquo;，
+想說自己也能快速的建立blog，但實際上並沒有&amp;hellip;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;有想要跟著做的人，可以搭配影片，與我下面的說明一起看
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt; github.io的subdomain要與username相同
+例如: 我自己的就要是 WebZaiMumi.github.io
+config.toml的baseURL也同樣要是這個&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt; 影片中的產生新文章的資料夾名稱與theme有關
+例如: 影片中使用contrast-hugo
+對應到的就會是hugo new posts/mypost.md
+我使用的是hugo-theme-stack
+對應到的就會是hugo new post/mypost.md&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt; 部屬是需要時間的，並不像影片可以秒做完
+你可以去github.io的action，確認是否已成功build &amp;amp; depoly&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;參考資料:&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=LIFvgrRxdt4&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.youtube.com/watch?v=LIFvgrRxdt4&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>使用Hugo 發布靜態網站 - 1</title>
         <link>https://WebZaiMumi.github.io/post/hugo-1/</link>
         <pubDate>Tue, 11 Apr 2023 06:54:32 +0800</pubDate>
@@ -16,33 +49,24 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;在這篇文章中，我會說明自己是如何開始並簡單闡述需要的預備知識與工具，過去的時候，我比較習慣把筆記放在local，不用特別的整理，也不需要在乎格式，但如今，充實自己的筆記與歷程，對於工程師已經是一個不可避免的事情(大人的因素，你們懂得&amp;hellip;)。&lt;/p&gt;
 &lt;p&gt;於是我參考youtube與網路上的文章，透過靜態網站的方式開始整理筆記。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;對於如何從0開始，以下是你會需要學習的知識與工具
+&lt;pre&gt;&lt;code&gt;對於如何從0開始，以下是你會需要的知識與工具
 &lt;/code&gt;&lt;/pre&gt;
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;基礎的git的指令與linux操作 (git bash)&lt;/p&gt;
+&lt;p&gt; 基礎的git的指令與linux操作 (Git for Windows，有GUI，但建議熟悉CMD)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Markdown語法 (vs code)&lt;/p&gt;
+&lt;p&gt; Markdown語法 (vs code，或是任一MD檔編輯器)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;一個github帳號&lt;/p&gt;
+&lt;p&gt; 一個github帳號&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 &lt;p&gt;參考資料:&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=LIFvgrRxdt4&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.youtube.com/watch?v=LIFvgrRxdt4&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://medium.com/@chswei/%E5%9C%A8-github-%E9%83%A8%E7%BD%B2-hugo-%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99-9c40682dfe40&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://medium.com/@chswei/%E5%9C%A8-github-%E9%83%A8%E7%BD%B2-hugo-%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99-9c40682dfe40&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Firstpost</title>
-        <link>https://WebZaiMumi.github.io/post/firstpost/</link>
-        <pubDate>Sun, 09 Apr 2023 00:39:51 +0800</pubDate>
-        
-        <guid>https://WebZaiMumi.github.io/post/firstpost/</guid>
-        <description>&lt;p&gt;Hey 1st post!!&lt;/p&gt;
 </description>
         </item>
         
