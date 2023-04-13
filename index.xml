@@ -18,19 +18,18 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt; github.io的subdomain要與username相同
-例如: 我自己的就要是 WebZaiMumi.github.io
-config.toml的baseURL也同樣要是這個&lt;/p&gt;
+&lt;p&gt;github.io的subdomain要與username相同&lt;!-- raw HTML omitted --&gt;&lt;br&gt;
+例如: 我自己的就要是WebZaiMumi.github.io，config.toml的baseURL也同樣要是這個&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt; 影片中的產生新文章的資料夾名稱與theme有關
-例如: 影片中使用contrast-hugo
-對應到的就會是hugo new posts/mypost.md
+&lt;p&gt;影片中的產生新文章的資料夾名稱與theme有關&lt;!-- raw HTML omitted --&gt;&lt;br&gt;
+影片中使用contrast-hugo
+對應到的就會是hugo new posts/mypost.md&lt;!-- raw HTML omitted --&gt;&lt;br&gt;
 我使用的是hugo-theme-stack
 對應到的就會是hugo new post/mypost.md&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt; 部屬是需要時間的，並不像影片可以秒做完
+&lt;p&gt;部屬是需要時間的，並不像影片可以秒做完&lt;!-- raw HTML omitted --&gt;&lt;br&gt;
 你可以去github.io的action，確認是否已成功build &amp;amp; depoly&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
