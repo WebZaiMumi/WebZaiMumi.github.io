@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="zh-tw" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='接續上篇，這篇文章主要是分享自己的心得經驗，一開始看到 &amp;ldquo;Creating a Blog with Hugo and Github in 10 minutes&amp;rdquo;， 想說自己也能快速的建立blog，但實際上並沒有&amp;hellip;
-有想要跟著做的人，可以搭配影片，與我下面的說明一起看 github.io的subdomain要與username相同
-例如: 我自己的就要是WebZaiMumi.github.io，config.toml的baseURL也同樣要是這個
-影片中的產生新文章的資料夾名稱與theme有關
-影片中使用contrast-hugo 對應到的就會是hugo new posts/mypost.md
-我使用的是hugo-theme-stack 對應到的就會是hugo new post/mypost.md
-部屬是需要時間的，並不像影片可以秒做完
-你可以去github.io的action，確認是否已成功build &amp;amp; depoly
-參考資料:
-https://www.youtube.com/watch?v=LIFvgrRxdt4'>
-<title>使用Hugo 發布靜態網站 - 2</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='The Missing Semester of Your CS Education lecture page: https://missing.csail.mit.edu/
+video recording: https://youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J
+課程介紹:
+這是一門我非常推薦的免費線上課程，由美國著名大學MIT開設，課程主要關注在軟體工程的工具使用，包含shell, vim, git與各種資料處理的方式， 在傳統的CS課程中，老師多半聚焦在理論的教學，然而熟悉工具與技巧是你自己的事可以大幅提升整體工作效率。
+舉例來說，在linux os要處理批次檔案修改，大致有三種流派
+把前人做好的script丟到crontab用現成的awk &#43; bash script 手刻檔案處理的程式 (我前同事的最愛，熟悉也可以刻很快，但不好複用) 人工一個檔案一個檔案慢慢改 (檔案一多，我就看你要改到什麼時候，改錯就等著&amp;hellip;) 學了不吃虧，未來使用的機會很多，畢竟server大多run在linux
+(第一份工作，前輩也是要我去複習鳥哥vbrid的教材)
+推薦的學習方式與心得:
+到目錄，尋找是否有自己感興趣的，先掃過text版本的內容(可以切換到中文，部分內容已翻譯)，不熟悉就去看課程錄影， 如果都沒問題，也可以試著玩玩最下面的課後練習。
+當然有時間，相當推薦快速帶過錄影，畢竟這門課程已經是濃縮的精要，錯過可惜~~'>
+<title>MIT - 消失的Computer Science課程</title>
 
-<link rel='canonical' href='https://WebZaiMumi.github.io/post/hugo-2/'>
+<link rel='canonical' href='https://WebZaiMumi.github.io/post/missing_semester/'>
 
-<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='使用Hugo 發布靜態網站 - 2'>
-<meta property='og:description' content='接續上篇，這篇文章主要是分享自己的心得經驗，一開始看到 &amp;ldquo;Creating a Blog with Hugo and Github in 10 minutes&amp;rdquo;， 想說自己也能快速的建立blog，但實際上並沒有&amp;hellip;
-有想要跟著做的人，可以搭配影片，與我下面的說明一起看 github.io的subdomain要與username相同
-例如: 我自己的就要是WebZaiMumi.github.io，config.toml的baseURL也同樣要是這個
-影片中的產生新文章的資料夾名稱與theme有關
-影片中使用contrast-hugo 對應到的就會是hugo new posts/mypost.md
-我使用的是hugo-theme-stack 對應到的就會是hugo new post/mypost.md
-部屬是需要時間的，並不像影片可以秒做完
-你可以去github.io的action，確認是否已成功build &amp;amp; depoly
-參考資料:
-https://www.youtube.com/watch?v=LIFvgrRxdt4'>
-<meta property='og:url' content='https://WebZaiMumi.github.io/post/hugo-2/'>
+<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='MIT - 消失的Computer Science課程'>
+<meta property='og:description' content='The Missing Semester of Your CS Education lecture page: https://missing.csail.mit.edu/
+video recording: https://youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J
+課程介紹:
+這是一門我非常推薦的免費線上課程，由美國著名大學MIT開設，課程主要關注在軟體工程的工具使用，包含shell, vim, git與各種資料處理的方式， 在傳統的CS課程中，老師多半聚焦在理論的教學，然而熟悉工具與技巧是你自己的事可以大幅提升整體工作效率。
+舉例來說，在linux os要處理批次檔案修改，大致有三種流派
+把前人做好的script丟到crontab用現成的awk &#43; bash script 手刻檔案處理的程式 (我前同事的最愛，熟悉也可以刻很快，但不好複用) 人工一個檔案一個檔案慢慢改 (檔案一多，我就看你要改到什麼時候，改錯就等著&amp;hellip;) 學了不吃虧，未來使用的機會很多，畢竟server大多run在linux
+(第一份工作，前輩也是要我去複習鳥哥vbrid的教材)
+推薦的學習方式與心得:
+到目錄，尋找是否有自己感興趣的，先掃過text版本的內容(可以切換到中文，部分內容已翻譯)，不熟悉就去看課程錄影， 如果都沒問題，也可以試著玩玩最下面的課後練習。
+當然有時間，相當推薦快速帶過錄影，畢竟這門課程已經是濃縮的精要，錯過可惜~~'>
+<meta property='og:url' content='https://WebZaiMumi.github.io/post/missing_semester/'>
 <meta property='og:site_name' content='姆咪 Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='hugo' /><meta property='article:published_time' content='2023-04-13T00:00:28&#43;08:00'/><meta property='article:modified_time' content='2023-04-13T00:00:28&#43;08:00'/>
-<meta name="twitter:title" content="使用Hugo 發布靜態網站 - 2">
-<meta name="twitter:description" content="接續上篇，這篇文章主要是分享自己的心得經驗，一開始看到 &amp;ldquo;Creating a Blog with Hugo and Github in 10 minutes&amp;rdquo;， 想說自己也能快速的建立blog，但實際上並沒有&amp;hellip;
-有想要跟著做的人，可以搭配影片，與我下面的說明一起看 github.io的subdomain要與username相同
-例如: 我自己的就要是WebZaiMumi.github.io，config.toml的baseURL也同樣要是這個
-影片中的產生新文章的資料夾名稱與theme有關
-影片中使用contrast-hugo 對應到的就會是hugo new posts/mypost.md
-我使用的是hugo-theme-stack 對應到的就會是hugo new post/mypost.md
-部屬是需要時間的，並不像影片可以秒做完
-你可以去github.io的action，確認是否已成功build &amp;amp; depoly
-參考資料:
-https://www.youtube.com/watch?v=LIFvgrRxdt4">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Software Engineer' /><meta property='article:tag' content='free' /><meta property='article:tag' content='learning' /><meta property='article:tag' content='Linux' /><meta property='article:published_time' content='2023-04-21T07:05:35&#43;08:00'/><meta property='article:modified_time' content='2023-04-21T07:05:35&#43;08:00'/>
+<meta name="twitter:title" content="MIT - 消失的Computer Science課程">
+<meta name="twitter:description" content="The Missing Semester of Your CS Education lecture page: https://missing.csail.mit.edu/
+video recording: https://youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J
+課程介紹:
+這是一門我非常推薦的免費線上課程，由美國著名大學MIT開設，課程主要關注在軟體工程的工具使用，包含shell, vim, git與各種資料處理的方式， 在傳統的CS課程中，老師多半聚焦在理論的教學，然而熟悉工具與技巧是你自己的事可以大幅提升整體工作效率。
+舉例來說，在linux os要處理批次檔案修改，大致有三種流派
+把前人做好的script丟到crontab用現成的awk &#43; bash script 手刻檔案處理的程式 (我前同事的最愛，熟悉也可以刻很快，但不好複用) 人工一個檔案一個檔案慢慢改 (檔案一多，我就看你要改到什麼時候，改錯就等著&amp;hellip;) 學了不吃虧，未來使用的機會很多，畢竟server大多run在linux
+(第一份工作，前輩也是要我去複習鳥哥vbrid的教材)
+推薦的學習方式與心得:
+到目錄，尋找是否有自己感興趣的，先掃過text版本的內容(可以切換到中文，部分內容已翻譯)，不熟悉就去看課程錄影， 如果都沒問題，也可以試著玩玩最下面的課後練習。
+當然有時間，相當推薦快速帶過錄影，畢竟這門課程已經是濃縮的精要，錯過可惜~~">
     </head>
     <body class="
     article-page
@@ -139,7 +139,7 @@ https://www.youtube.com/watch?v=LIFvgrRxdt4">
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/post/hugo-2/">使用Hugo 發布靜態網站 - 2</a>
+            <a href="/post/missing_semester/">MIT - 消失的Computer Science課程</a>
         </h2>
     
         
@@ -161,7 +161,7 @@ https://www.youtube.com/watch?v=LIFvgrRxdt4">
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Apr 13, 2023</time>
+                <time class="article-time--published">Apr 21, 2023</time>
             </div>
         
 
@@ -191,30 +191,28 @@ https://www.youtube.com/watch?v=LIFvgrRxdt4">
     <section class="article-content">
     
     
-    <p>接續上篇，這篇文章主要是分享自己的心得經驗，一開始看到 &ldquo;Creating a Blog with Hugo and Github in 10 minutes&rdquo;，
-想說自己也能快速的建立blog，但實際上並沒有&hellip;</p>
-<pre><code>有想要跟著做的人，可以搭配影片，與我下面的說明一起看
-</code></pre>
-<ul>
-<li>
-<p>github.io的subdomain要與username相同<!-- raw HTML omitted --><br>
-例如: 我自己的就要是WebZaiMumi.github.io，config.toml的baseURL也同樣要是這個</p>
-</li>
-<li>
-<p>影片中的產生新文章的資料夾名稱與theme有關<!-- raw HTML omitted --><br>
-影片中使用contrast-hugo
-對應到的就會是hugo new posts/mypost.md<!-- raw HTML omitted --><br>
-我使用的是hugo-theme-stack
-對應到的就會是hugo new post/mypost.md</p>
-</li>
-<li>
-<p>部屬是需要時間的，並不像影片可以秒做完<!-- raw HTML omitted --><br>
-你可以去github.io的action，確認是否已成功build &amp; depoly</p>
-</li>
-</ul>
-<p>參考資料:</p>
-<p><a class="link" href="https://www.youtube.com/watch?v=LIFvgrRxdt4"  target="_blank" rel="noopener"
-    >https://www.youtube.com/watch?v=LIFvgrRxdt4</a></p>
+    <h2 id="the-missing-semester-of-your-cs-education"><strong>The Missing Semester of Your CS Education</strong></h2>
+<p><strong>lecture page:</strong>
+<a class="link" href="https://missing.csail.mit.edu/"  target="_blank" rel="noopener"
+    >https://missing.csail.mit.edu/</a></p>
+<p><strong>video recording:</strong>
+<a class="link" href="https://youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J"  target="_blank" rel="noopener"
+    >https://youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J</a></p>
+<p><strong>課程介紹:</strong><!-- raw HTML omitted --><br>
+這是一門我非常推薦的免費線上課程，由美國著名大學MIT開設，課程主要關注在軟體工程的工具使用，包含shell, vim, git與各種資料處理的方式，
+在傳統的CS課程中，老師多半聚焦在理論的教學，然而熟悉工具與技巧<del>是你自己的事</del>可以大幅提升整體工作效率。<!-- raw HTML omitted --></p>
+<p>舉例來說，在linux os要處理批次檔案修改，大致有三種流派</p>
+<ol>
+<li><del>把前人做好的script丟到crontab</del>用現成的awk + bash script</li>
+<li>手刻檔案處理的程式 (我前同事的最愛，熟悉也可以刻很快，但不好複用)</li>
+<li>人工一個檔案一個檔案慢慢改 (檔案一多，我就看你要改到什麼時候，改錯就等著&hellip;)<!-- raw HTML omitted --></li>
+</ol>
+<p>學了不吃虧，未來使用的機會很多，畢竟server大多run在linux<!-- raw HTML omitted --><br>
+(第一份工作，前輩也是要我去複習鳥哥vbrid的教材)</p>
+<p><strong>推薦的學習方式與心得:</strong><!-- raw HTML omitted --><br>
+到目錄，尋找是否有自己感興趣的，先掃過text版本的內容(可以切換到中文，部分內容已翻譯)，不熟悉就去看課程錄影，
+如果都沒問題，也可以試著玩玩最下面的課後練習。</p>
+<p>當然有時間，相當推薦快速帶過錄影，畢竟這門課程已經是濃縮的精要，錯過可惜~~</p>
 
 </section>
 
@@ -223,7 +221,13 @@ https://www.youtube.com/watch?v=LIFvgrRxdt4">
     
     <section class="article-tags">
         
-            <a href="/tags/hugo/">hugo</a>
+            <a href="/tags/software-engineer/">Software Engineer</a>
+        
+            <a href="/tags/free/">free</a>
+        
+            <a href="/tags/learning/">learning</a>
+        
+            <a href="/tags/linux/">Linux</a>
         
     </section>
 
@@ -237,28 +241,6 @@ https://www.youtube.com/watch?v=LIFvgrRxdt4">
     
 
     
-
-<aside class="related-content--wrapper">
-    <h2 class="section-title">Related content</h2>
-    <div class="related-content">
-        <div class="flex article-list--tile">
-            
-                
-<article class="">
-    <a href="/post/hugo-1/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">使用Hugo 發布靜態網站 - 1</h2>
-        </div>
-    </a>
-</article>
-
-            
-        </div>
-    </div>
-</aside>
 
      
     
